@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://muovi.roma.it/ws/xml/autenticazione/1
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" ?><methodCall><methodName>autenticazione.Accedi</methodName><params><param><value><string></string></value></param><param><value><string></string></value></param></params></methodCall>
+    headers:
+      User-Agent:
+      - XMLRPC::Client (Ruby 2.1.3)
+      Content-Type:
+      - application/xml
+      Content-Length:
+      - '237'
+      Connection:
+      - keep-alive
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - localhost
+      Vary:
+      - Accept-Language,Cookie,Accept-Encoding
+      Content-Type:
+      - application/xml
+      Content-Language:
+      - it
+      Set-Cookie:
+      - sessionid=bjcxbeg5f2xe4gdzyemhobhhj485iz8l; expires=Sat, 18-Oct-2014 22:13:07
+        GMT; httponly; Max-Age=18000; Path=/
+      Content-Length:
+      - '133'
+      Date:
+      - Sat, 18 Oct 2014 17:13:07 GMT
+      X-Varnish:
+      - '1365847751'
+      Age:
+      - '0'
+      Via:
+      - 1.1 varnish
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version='1.0'?>
+        <methodResponse>
+        <params>
+        <param>
+        <value><string>bjcxbeg5f2xe4gdzyemhobhhj485iz8l</string></value>
+        </param>
+        </params>
+        </methodResponse>
+    http_version: 
+  recorded_at: Sat, 18 Oct 2014 17:13:06 GMT
+recorded_with: VCR 2.9.3
