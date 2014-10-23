@@ -33,9 +33,8 @@ client.authentication(user_id)
 
 ### Routes search
 
+The ``options`` attribute is mandatory to define the criteria of the search.
 ```ruby
-# The user_id is an optional attribute but recommendable to associate a session to a user
-user_id = 2
 client = MuoviRoma::Client.new(key: "you-api-key")
 session_token = "bjcxbeg5f2xe4gdzyemhobhhj485iz8l"
 from = "Via Cavour, 6"
