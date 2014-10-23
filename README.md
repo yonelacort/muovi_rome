@@ -20,7 +20,39 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Create a session
+
+In order to use the interface, it's required to create a session token and use in every request to be authorized as a consumer of the API to do requests.
+
+```ruby
+# The user_id is an optional attribute but recommendable to associate a session to a user
+user_id = 2
+client = MuoviRoma::Client.new(key: "you-api-key")
+client.authentication(user_id)
+```
+
+### Routes search
+
+```ruby
+# The user_id is an optional attribute but recommendable to associate a session to a user
+user_id = 2
+client = MuoviRoma::Client.new(key: "you-api-key")
+session_token = "bjcxbeg5f2xe4gdzyemhobhhj485iz8l"
+from = "Via Cavour, 6"
+to = "Via dei Prati dei Papa, 41"
+datetime = "2014-10-20 12:00:00"
+options = {
+  mezzo: 1,
+  piedi: 1,
+  bus: true,
+  metro: true,
+  ferro: true,
+  carpooling: false,
+  max_distanza_bici: 1000,
+  when: 2
+}
+client.routes(session_id, from, to, datetime, options)
+```
 
 ## Contributing
 
