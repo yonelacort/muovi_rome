@@ -1,6 +1,9 @@
 # MuoviRoma
 
-TODO: Write a gem description
+Ruby wrapper to use the API interface of Muovi Roma for real-time public transportion in Rome.
+
+Here's a link to the complete interface of the Web Service:
+http://www.agenziamobilita.roma.it/en/od-servizi-real-time.html
 
 ## Installation
 
